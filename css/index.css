@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: none;
+  list-style: none;
+}
+
+.main .load {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  transition: 1s all;
+  transition-delay: 4.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .load__ani {
+  display: flex;
+}
+.main .load__ani__box {
+  display: flex;
+}
+.main .load__ani__sec {
+  margin: 20px 10px;
+  width: 250px;
+  height: 250px;
+  background-color: aliceblue;
+  background-size: cover;
+  background-position: center;
+}
+.main .load__ani__1 {
+  background-image: url("../img/0.jpeg");
+  border-radius: 50px 50px 0 50px;
+}
+.main .load__ani__2 {
+  background-image: url(../img/1.jpeg);
+  border-radius: 50px 0 50px 50px;
+}
+.main .load__ani__3 {
+  background-image: url(../img/2.jpeg);
+  border-radius: 50px 50px 50px 0;
+}
+.main .load__ani__4 {
+  background-image: url(../img/3.jpeg);
+  border-radius: 0 50px 50px 50px;
+}
+.main .loading {
+  opacity: 0;
+  visibility: hidden;
+}
+.main .sec__ani {
+  position: relative;
+}
+.main .sec__ani::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  border-radius: inherit;
+}
+.main .flash-ani::after {
+  -webkit-animation: flash 0.4s infinite;
+          animation: flash 0.4s infinite;
+}
+.main .flash-anied::after {
+  background-color: rgba(255, 255, 255, 0);
+}
+@-webkit-keyframes flash {
+  0% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+@keyframes flash {
+  0% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+.main .fstv {
+  position: fixed;
+  z-index: -10;
+}
+.main .fstv__img {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/1.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.main__cont {
+  width: 100vw;
+  transform: translateY(100vh);
+  background-color: #FFD918;
+  box-shadow: 0px 5px 10px #000;
+}
+.main__cont .sec1 {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=index.css.map */
